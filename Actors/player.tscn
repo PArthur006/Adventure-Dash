@@ -99,8 +99,7 @@ editor_draw_drag_margin = true
 [node name="anim" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -14)
 sprite_frames = SubResource("SpriteFrames_1kls3")
-animation = &"run"
+animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.360067
 
 [node name="animator" type="AnimationPlayer" parent="."]
