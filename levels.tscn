@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://bukacwgdm3ye1"]
+[gd_scene load_steps=18 format=3 uid="uid://bukacwgdm3ye1"]
 
 [ext_resource type="Texture2D" uid="uid://vs3iaj7581q7" path="res://assets/Seasonal Tilesets/1 - Grassland/Terrain (16 x 16).png" id="1_ntwue"]
 [ext_resource type="Texture2D" uid="uid://d2t87ne0qpvdu" path="res://assets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="2_d2xxv"]
 [ext_resource type="PackedScene" uid="uid://bg88rltvshxj7" path="res://Actors/player.tscn" id="3_4xoo7"]
+[ext_resource type="Texture2D" uid="uid://mklpnfadpr62" path="res://assets/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="3_bpjw5"]
 [ext_resource type="Texture2D" uid="uid://blkexxnwc4yl3" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/5 - Sky_color.png" id="4_j8uub"]
 [ext_resource type="Texture2D" uid="uid://caqswuxltc1sw" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/4 - Cloud_cover_2.png" id="5_ey0yx"]
 [ext_resource type="Texture2D" uid="uid://ve0r1jwsxcfn" path="res://assets/Seasonal Tilesets/1 - Grassland/Background parts/3 - Cloud_cover_1.png" id="6_2h636"]
@@ -130,11 +131,53 @@ texture = ExtResource("2_d2xxv")
 5:5/size_in_atlas = Vector2i(3, 1)
 5:5/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bjd5r"]
+texture = ExtResource("3_bpjw5")
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+8:0/size_in_atlas = Vector2i(7, 6)
+8:0/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_mtg1l"]
 physics_layer_0/collision_layer = 2
 physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_h8hsj")
 sources/1 = SubResource("TileSetAtlasSource_enwr5")
+sources/2 = SubResource("TileSetAtlasSource_bjd5r")
 pattern_0 = SubResource("TileMapPattern_bu33x")
 pattern_1 = SubResource("TileMapPattern_jgasv")
 
@@ -149,7 +192,7 @@ position = Vector2(-103, 102)
 tile_set = SubResource("TileSet_mtg1l")
 format = 2
 layer_0/name = "trees"
-layer_0/tile_data = PackedInt32Array(524319, 65537, 1, 524311, 327681, 1, 524300, 65537, 1, 524314, 589825, 1, 458794, 589825, 1, 524317, 327681, 1, 262153, 589825, 1, 458799, 327681, 1, 524344, 65537, 1, 393282, 589825, 1, 589884, 65537, 5, 589885, 65537, 5, 589886, 65537, 5, 589875, 65537, 5)
+layer_0/tile_data = PackedInt32Array(524319, 65537, 1, 524311, 327681, 1, 524314, 589825, 1, 458794, 589825, 1, 524317, 327681, 1, 262153, 589825, 1, 458799, 327681, 1, 524344, 65537, 1, 393282, 589825, 1, 589884, 65537, 5, 589885, 65537, 5, 589886, 65537, 5, 589875, 65537, 5, 393229, 524290, 0)
 layer_1/name = "decor"
 layer_1/tile_data = PackedInt32Array(589835, 327681, 5, 589838, 327681, 5, 589840, 720897, 5, 589834, 655361, 5, 327690, 196609, 5, 524331, 983041, 2, 524332, 1048577, 2, 524333, 1114113, 2, 524328, 65537, 5, 524329, 65537, 5, 589854, 65537, 5, 589844, 65537, 5, 589846, 65537, 5, 589848, 65537, 5, 589862, 65537, 5, 589876, 1048577, 5, 524340, 1048577, 5, 589878, 1048577, 5, 524342, 1048577, 5, 458806, 1048577, 5, 393270, 1048577, 5, 589882, 1048577, 5, 524346, 1048577, 5, 458810, 1048577, 5, 393274, 1048577, 5, 327738, 1048577, 5, 262202, 1048577, 5, 589891, 1048577, 5, 524355, 1048577, 5, 458819, 1048577, 5, 393283, 1048577, 5, 327747, 1048577, 5, 262211, 1048577, 5, 196675, 1048577, 5, 131139, 1048577, 5, 65603, 1048577, 5, 67, 1048577, 5, -65469, 1179649, 4, 589888, 1048577, 5, 524352, 1048577, 5, 458816, 1048577, 5, 393280, 1048577, 5, 327744, 1048577, 5, 262208, 1048577, 5, 196672, 1048577, 5, 131136, 1048577, 5, 458804, 1179649, 4, 327734, 1179649, 4, 196666, 1179649, 4, 65600, 1179649, 4, -65470, 1114113, 4, 65599, 1114113, 4, 65598, 1114113, 4, 65597, 1114113, 4, 65596, 1114113, 4, 196665, 1114113, 4, 196664, 1114113, 4, 327733, 1114113, 4, 458803, 1114113, 4, 458802, 1114113, 4, 524336, 1048577, 4, 524335, 1048577, 4)
 layer_2/name = "ground"
